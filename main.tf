@@ -1,7 +1,6 @@
 provider "google" {
 project = "terraform-287414"
 region = "us-central1"
-credentials = "/home/dvaradha/codes/keys.json"
 }
 resource "google_compute_instance" "firstvm" {
 name = "myvm"
