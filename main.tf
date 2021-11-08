@@ -23,7 +23,7 @@ network = "default"
 
 
 resource "google_compute_instance" "secondvm" {
-name = "myvm2"
+name = "myvm3"
 zone = "us-central1-a"
 machine_type = "f1-micro"
 boot_disk {
