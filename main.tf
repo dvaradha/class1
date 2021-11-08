@@ -9,7 +9,7 @@ data "google_compute_image" "myimage" {
 }
 resource "google_compute_instance" "firstvm" {
 name = "myvm1"
-zone = "us-central1"
+zone = "us-central1-a"
 machine_type = "f1-micro"
 boot_disk {
         initialize_params {
