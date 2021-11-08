@@ -20,3 +20,11 @@ network_interface {
 network = "default"
 }
 }
+
+output "vm_name" {
+        value = google_compute_instance.firstvm.name
+}
+
+output "vm_id" {
+        value = google_compute_instance.firstvm.instance_id
+}
