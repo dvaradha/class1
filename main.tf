@@ -21,6 +21,21 @@ network = "default"
 }
 }
 
+
+resource "google_compute_instance" "secondvm" {
+name = "myvm2"
+zone = "us-central1-a"
+machine_type = "f1-micro"
+boot_disk {
+        initialize_params {
+                image = data.google_compute_image.myimage.self_link
+}
+}
+network_interface {
+network = "default"
+}
+}
+
 output "vm_name" {
         value = google_compute_instance.firstvm.name
 }
