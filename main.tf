@@ -8,8 +8,8 @@ data "google_compute_image" "myimage" {
         project = "debian-cloud"
 }
 resource "google_compute_instance" "firstvm" {
-name = "myvm1"
-zone = "us-central1-a"
+name = "myvm"
+zone = "us-central1-b"
 machine_type = "f1-micro"
 boot_disk {
         initialize_params {
